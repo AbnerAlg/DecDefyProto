@@ -9,8 +9,19 @@ package com.mycompany.suma;
  * @author abner
  */
 public class Suma {
-
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        // Declaración del prototipo de la función
+        int suma(int a, int b);
+        
+        // Definición de la función
+        int suma(int a, int b) {
+            return a + b;
+        }
+        
+        // Llamada a la función desde el método main
+        int resultado = suma(3, 5);
+        System.out.println("La suma es: " + resultado);
     }
 }
+
+
